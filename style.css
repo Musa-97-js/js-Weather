@@ -14,16 +14,14 @@ body {
   background-color: #9c6644;
   border-radius: 20px;
 }
-#jsWeather .box .data {
+#jsWeather .box .data h1, #jsWeather .box .data h2 {
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 50px;
   color: #ffffff;
-}
-#jsWeather .box .data h1, #jsWeather .box .data h2 {
-  font-size: 20px;
 }
 #jsWeather input {
   width: 60%;
