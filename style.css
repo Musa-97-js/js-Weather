@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 85%;
+  width: auto;
   height: auto;
   background-color: #9c6644;
   border-radius: 20px;
@@ -24,7 +24,7 @@ body {
   color: #ffffff;
 }
 #jsWeather input {
-  width: 60%;
+  width: 65%;
   border-radius: 20px;
 }
 #jsWeather #btn {
@@ -36,9 +36,4 @@ body {
 }
 #jsWeather #btn:hover {
   background-color: #ffc15e;
-}
-@media screen and (max-width: 767px) {
-  #jsWeather .box {
-    width: auto;
-  }
 }/*# sourceMappingURL=style.css.map */

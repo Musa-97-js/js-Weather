@@ -5,16 +5,16 @@ $(document).ready(function () {
 
     $(document).on('keypress', function (e) {
         if (e.witch == 13) {
-            let url = `http://api.openweathermap.org/data/2.5/weather?${$("myWeather").val()}&APPID=09a44534d8c631e10c460787bcff465f`
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${$("myweather").val()}&appid=a783e6ba85fdac6a7d793331139b9575&units=metric`
             async function myweather() {
                 let responce = await fetch(url)
                 let data = await responce.json()
                 $("#city").html(data.name)
                 $("#temp").html(data.main.temp)
                 $("#feels").html(data.main.feels_like)
-                $("#myWeather").val("")
+                $("#myweather").val("")
                 console.log(data)
-                
+
             }
             myweather()
         }
@@ -22,14 +22,14 @@ $(document).ready(function () {
 
     $('#btn').click(function (e) {
         e.preventDefault()
-        let url = `http://api.openweathermap.org/data/2.5/weather?${$("myWeather").val()}&APPID=09a44534d8c631e10c460787bcff465f`
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${$("myweather").val()}&appid=a783e6ba85fdac6a7d793331139b9575&units=metric`
         async function myweather() {
             let responce = await fetch(url)
             let data = await responce.json()
             $("#city").html(data.name)
             $("#temp").html(data.main.temp)
             $("#feels").html(data.main.feels_like)
-            $("#myWeather").val("")
+            $("#myweather").val("")
             console.log(data)
         }
         myweather()
