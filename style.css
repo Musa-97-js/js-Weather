@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 85%;
   height: auto;
   background-color: #9c6644;
   border-radius: 20px;
@@ -29,11 +29,19 @@ body {
 }
 #jsWeather #btn {
   margin: 25px 0;
-  color: #ffffff;
   background-color: #f8c471;
   border-radius: 20px;
   padding: 7px 25px;
 }
 #jsWeather #btn:hover {
   background-color: #ffc15e;
+}
+#jsWeather #btn h2 {
+  width: auto;
+  color: #ffffff;
+}
+@media screen and (max-width: 991px) {
+  #jsWeather .box {
+    width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
