@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     $(document).on('keypress', function (e) {
         if (e.which == 13) {
-            let url = `https://api.openweathermap.org/data/2.5/weather?q=${$("#myweather").val()}&appid=API KEY --- -- &units=metric`
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${$("#myweather").val()}&appid=d96aacd8aeaf78aaa35765d5fd210ee5&units=metric`
             async function myweather() {
                 let responce = await fetch(url)
                 let data = await responce.json()
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $('#btn').click(function (e) {
         e.preventDefault()
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${$("#myweather").val()}&appid=API KEY --- -- &units=metric`
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${$("#myweather").val()}&appid=d96aacd8aeaf78aaa35765d5fd210ee5&units=metric`
         async function myweather() {
             let responce = await fetch(url)
             let data = await responce.json()
