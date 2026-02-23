@@ -9,23 +9,24 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 85%;
+  width: 75%;
   height: auto;
   background-color: #9c6644;
   border-radius: 20px;
 }
 #jsWeather .box .data h1, #jsWeather .box .data h2 {
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 50px;
+  line-height: 40px;
   color: #ffffff;
 }
 #jsWeather input {
   width: 65%;
   border-radius: 20px;
+  margin: 20px 0 0;
 }
 #jsWeather #btn {
   width: 50%;
